@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #222;
+  --purple: #490055;
+  --purple2: #d09cd7;
+  --purple3: #7c0090;
+}
+
+html {
+  font-size: 63%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--purple);
+  color: var(--white);
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.container {
+  background-image: url(images/girlmovie.png);
+  mix-blend-mode: plus-lighter;
+  padding: 20px 0px 470px 18px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: fixed center;
+}
+
+div.navigation {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 18px;
+  padding-top: 80px;
+}
+
+div.navigation ul {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 18px;
+}
+
+div.social {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  padding-inline-end: 70px;
+  padding-top: 30px;
+}
