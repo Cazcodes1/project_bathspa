@@ -4,14 +4,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --white: #fff;
   --black: #222;
-  --purple: #490055;
-  --purple2: #d09cd7;
+  --background: #550040;
+  --purple: #64004b;
+  --purple2: #f3bcff;
   --purple3: #7c0090;
+  --purple4: #0e0011;
+  --yellow: rgb(255, 250, 201);
 }
 
 html {
@@ -20,10 +24,10 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  background-color: var(--purple);
-  color: var(--white);
-  font-weight: 400;
+  font-size: 1.65rem;
+  background-color: var(--background);
+  font-weight: 600;
+  min-height: 1000px;
 }
 
 a {
@@ -36,38 +40,166 @@ li {
   padding: 10px;
 }
 
-.container {
-  background-image: url(images/girlmovie.png);
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: url(images/girlmovie.png);
+  mix-blend-mode: screen;
+  background-size: cover;
+  padding-top: 250px;
+}
+.banner .content {
+  max-width: 900px;
+  text-align: left;
+}
+
+.banner .content h2 {
+  font-size: 1.9em;
+}
+.headline {
+  color: var(--yellow);
+}
+.dot {
+  color: var(--white);
+}
+
+.banner .content p {
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 6px 0;
+  color: var(--white);
+}
+
+.banner .content p.first-heading {
+  font-size: 1.75em;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.btn {
+  font-size: 1em;
+  color: var(--purple);
+  background: #fffce0;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 150px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+.logo {
+  display: flex;
+  align-items: left;
+}
+
+header {
+  position: fixed;
+  top: -100px;
+  left: -110px;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: 0.05s;
+}
+
+header.sticky {
+  background: #8e0364fa;
+  width: 110%;
+  height: 40%;
+  margin-top: 70px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+a.logo {
   mix-blend-mode: plus-lighter;
-  padding: 20px 0px 470px 18px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: fixed center;
 }
 
-div.navigation {
+header .navigation {
+  position: relative;
   display: flex;
-  position: fixed;
-  flex-direction: row;
-  flex-wrap: wrap;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 25px;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+header .social {
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: 550px;
+}
+
+header .navigation li a:hover {
+  color: var(--purple);
+}
+
+header.sticky .navigation li a {
+  color: var(--white);
+}
+header.sticky .navigation li a:hover {
+  color: var(--purple2);
+}
+
+span.headline {
+  color: var(--purple3);
+}
+
+section {
+  padding: 100px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .row .col50 {
+  position: relative;
+  width: 48%;
+}
+
+.row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  /*min-height: 300px;*/
+/* height: 100%;
+}
+.row .col50 .imgBx img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+*/ .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 18px;
-  padding-top: 80px;
-}
-
-div.navigation ul {
-  display: flex;
-  position: fixed;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 18px;
-}
-
-div.social {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
-  padding-inline-end: 70px;
-  padding-top: 30px;
+  flex-direction: column;
 }

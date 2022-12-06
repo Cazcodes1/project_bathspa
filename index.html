@@ -10,42 +10,32 @@
   </head>
   <body>
     <!-- This is the header section -->
-    <header>
-    <div class="container">
-   
-      <div class="navigation">
-        <ul>
-           <img src="/images/logo.png" style="width: 350px" alt="logo" /><a
-        href="/images/logo.png"
-        class="logo"
-      ></a
-      ><img />
-       
-            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Movies</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-         
 
-         </ul> 
-
-  </div>
-       
-    
-
-      <div class="social">  
-        <ul>
-   <li class="soc-item"><img src="images/heart.png" style="width: 40px"class="nav-link"></img></li>
-     <li class="soc-item"><img src="images/search.png" style="width: 40px"class="nav-link"></img></li>
-       <li class="soc-item"><img src="images/cart.png" style="width: 40px"class="nav-link"></img></li>
-</ul>
-</div>
-  </div>
-
-
-      
-   
-
+       <header>
+      <a href="#" class="logo"><img src="images/maroonlogo.png" style="width: 400px"></img></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#movies" onclick="toggleMenu();">Movies</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+       <ul class="social">
+        <li><a href="#like" onclick="toggleMenu();"><img src="images/heart.png" alt="heart icon" style="width: 25px" class="heart"></a></li>
+        <li><a href="#search" onclick="toggleMenu();"><img src="images/search.png" alt="search icon" style="width: 25px" class="search"></a></li>
+        <li><a href="#cart" onclick="toggleMenu();"><img src="images/cart.png" alt="cart icon" style="width: 25px" class="cart"></a></li>
+        </ul>
     </header>
+    <section class="banner" id="banner">
+      <div class="content">
+        <p class="first-heading">Huge Selection</p>
+        <h2 class="headline">Second Hand Movies<span class="dot">.</span> First Class Choice<span class="dot">.</span></h2>
+        <p>
+          DVDs - Bluerays
+        </p>
+        <a href="#signup" class="btn">Sign Up</a>
+      </div>
+    </section>
+   
   </body>
 </html>
