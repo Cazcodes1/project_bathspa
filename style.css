@@ -50,6 +50,8 @@ li {
   background: url(images/girlmovie.png);
   mix-blend-mode: screen;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 250px;
 }
 .banner .content {
