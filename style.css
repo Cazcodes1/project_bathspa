@@ -228,3 +228,123 @@ strong {
   color: var(--yellow);
   padding-bottom: 28px;
 }
+
+@media only screen and (max-width: 460px) and (min-width: 320px) {
+  body {
+    background: #ab005cb5;
+  }
+  header.sticky {
+    display: none;
+  }
+  header {
+    position: fixed;
+    left: -168px;
+    width: 100%;
+    padding: 0px 84px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .navigation li {
+    font-size: 15px;
+    padding: 6px;
+    margin-left: 3px;
+  }
+  ul.navigation {
+    margin: 0 auto;
+    margin-top: -140px;
+  }
+  ul.social {
+    margin-left: 110px;
+  }
+  .banner {
+    position: relative;
+    margin-top: 49px;
+    width: 120%;
+    min-height: 101vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: left; */
+    /* align-items: center; */
+    background: url(images/girlmovie.png);
+    /* mix-blend-mode: screen; */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .banner .content h2 {
+    font-size: 19px;
+  }
+  .banner .content p.first-heading {
+    font-size: 19px;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
+  section.about {
+    flex-direction: column-reverse;
+    padding-top: 0px;
+    padding-left: 45px;
+    padding-right: 0px;
+  }
+  img.shop {
+    margin-top: 27px;
+    padding: 7px 230px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 460px) {
+  /* iPads, Tablets */
+
+  body {
+    background: #ab005cb5;
+  }
+  header.sticky {
+    display: none;
+  }
+  header {
+    position: fixed;
+    left: -168px;
+    width: 100%;
+    padding: 8px 79px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header.navigation li {
+    font-size: 14px;
+    padding: 0px;
+    margin-left: 3px;
+  }
+  ul.navigation {
+    margin: 0 auto;
+    margin-top: -140px;
+  }
+  ul.social {
+    margin-left: 110px;
+  }
+  .banner {
+    position: relative;
+    margin-top: 50px;
+    width: 120%;
+    min-height: 101vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: left; */
+    /* align-items: center; */
+    background: url(images/girlmovie.png);
+    /* mix-blend-mode: screen; */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .banner .content h2 {
+    font-size: 23.5px;
+  }
+  .banner .content p.first-heading {
+    font-size: 19px;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
+}
