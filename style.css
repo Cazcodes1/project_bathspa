@@ -359,7 +359,7 @@ strong {
   
 }
 
-.all-drinks-container {
+.all-movies-container {
   margin: 20px 20px;
   margin-top: 120px;
   display: grid;
@@ -391,7 +391,7 @@ strong {
   position: relative;
 }
 
-.drink-image {
+.movie-image {
   display: block;
   width: 150%;
   border-radius: 17px;
