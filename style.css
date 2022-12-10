@@ -182,6 +182,7 @@ section.about {
   justify-content: flex-start;
   max-width: 100%;
   margin-top: 10%;
+  /* margin-bottom: 10%; */
 }
 .row {
   position: relative;
@@ -350,13 +351,20 @@ strong {
     font-size: 16px;
   }
 }
-
+/* Movies Section */
 
 .movies-heading {
+  margin-top: 50px;
   font-size: 1.9em;
   text-align: center;
   color:var(--yellow);
   
+}
+p.choose {
+  margin-top: 30px;
+  text-align: center;
+  color: var(--white);
+  font-size: 25px;
 }
 
 .all-movies-container {
@@ -364,7 +372,7 @@ strong {
   margin-top: 120px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 17rem);
-  gap: 14rem;
+  gap: 15rem;
   align-items: flex-start;
   justify-content: center;
   font-size: 8px;
@@ -374,7 +382,7 @@ strong {
   
 }
 .menu .box-container .box img {
-  width: 77%;
+  width: 80%;
 
   margin-bottom: 1rem;
 }
