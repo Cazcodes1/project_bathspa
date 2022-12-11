@@ -377,6 +377,12 @@ ul.icons {
   object-fit: contain;
   padding: 20px;
 }
+
+i.bx.bx-shopping-bag.add-cart {
+  margin-left: 10px;
+  color: var(--yellow);
+  font-size: 24px;
+}
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
