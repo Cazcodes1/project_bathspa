@@ -1,3 +1,5 @@
+// Nav Section
+
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
@@ -10,48 +12,44 @@ function toggleMenu() {
   navigation.classList.toggle("active");
 }
 
-function plusSlides(n) {
-  SlideShow((slidePosition += n));
+// Cart section
+
+let cartIcon = document.getElementById("cart-icon");
+let cart = document.querySelector(".cart");
+let closeCart = document.getElementById("close-cart");
+
+// Open my cart
+cartIcon.onclick = () => {
+  cart.classList.add("active");
+};
+
+// Close my cart
+closeCart.onclick = () => {
+  cart.classList.remove("active");
+};
+
+// Cart Working JS
+
+if (document.readyState == "loading") {
+  document.addEventListener("DOMContentLoaded", ready);
+} else {
+  ready();
 }
 
-//  images controls
-function currentSlide(n) {
-  SlideShow((slidePosition = n));
+// Making Function
+
+function ready() {
+  // Remove items from cart
+  const removeCartButtons = document.getElementsByClassName("cart-remove");
+  console.log(removeCartButtons);
+  for (const i = 0; i < removeCartButtons.length; i++) {
+    const button = removeCartButtons[i];
+    button.addEventListener("click", removeCartItem);
+  }
 }
 
-function SlideShow(n) {
-  var i;
-  var slides = document.getElementsByClassName("product-item");
-  var circles = document.getElementsByClassName("dots");
-  if (n > slides.length) {
-    slidePosition = 1;
-  }
-  if (n < 1) {
-    slidePosition = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < circles.length; i++) {
-    circles[i].className = circles[i].className.replace(" enable", "");
-  }
-  slides[slidePosition - 1].style.display = "block";
-  circles[slidePosition - 1].className += " enable";
-}
-
-var slidePosition = 0;
-SlideShow();
-
-function SlideShow() {
-  var i;
-  var slides = document.getElementsByClassName("product-item");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slidePosition++;
-  if (slidePosition > slides.length) {
-    slidePosition = 1;
-  }
-  slides[slidePosition - 1].style.display = "block";
-  setTimeout(SlideShow, 20000); // Change image every 2 seconds
+// Remove items from Cart
+function removeCartItem(event) {
+  const buttonClicked = event.target;
+  buttonClicked.parentElement.remove();
 }

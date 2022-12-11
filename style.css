@@ -178,6 +178,14 @@ section {
   padding: 100px;
 }
 
+#cart-icon {
+  font-size: 50px;
+  display: flex;
+  padding-left: 500px;
+
+  color: var(--yellow);
+}
+
 /* Start of About Section */
 
 section.about {
@@ -289,7 +297,7 @@ p.choose {
     rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
-.image__title {
+/* .image__title {
   font-size: 2.5em;
   font-weight: bold;
 }
@@ -297,7 +305,7 @@ p.choose {
 .image__description {
   font-size: 2em;
   margin-top: 0.25em;
-}
+} */
 .product-title {
   display: flex;
   font-size: 16px;
@@ -337,14 +345,19 @@ ul.icons {
   width: 360px;
   min-height: 100vh;
   padding: 20px;
-  background-color: #fcdfe4;
+  background-color: rgb(255, 240, 247);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: 0.3s;
+}
+
+.cart.active {
+  right: 0;
 }
 
 .cart-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-top: 2rem;
   color: var(--purple);
@@ -377,15 +390,70 @@ ul.icons {
 .cart-price {
   font-weight: 500;
 }
-.cart-quantity {
+
+/* .cart-quantity {
   border: 1px solid var(--purple);
   /* outline-color: #550040; */
-  width: 2.4rem;
+/* width: 2.4rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.5rem; */
+/* } */
+
+/* Cart quantity to show arrows.  CSS styling can't be applied as a class. */
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
 }
-header .social {
-  display: none;
+
+.cart-remove {
+  font-size: 24px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--purple);
+}
+
+.total-title {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: grey;
+}
+.total-price {
+  margin-left: 0.5rem;
+}
+
+button.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: rgb(255, 255, 227);
+  color: var(--purple);
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+/* not working */
+button .btn-buy:hover {
+  letter-spacing: 3px;
+}
+
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--black);
+  cursor: pointer;
 }
 
 /* Start of Media Queries */
