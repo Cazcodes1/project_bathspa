@@ -154,6 +154,8 @@ header .social {
   display: flex;
   flex-direction: column;
   margin-left: 500px;
+  color: var(--yellow);
+  font-size: 23px;
 }
 
 header .navigation li a:hover {
@@ -456,7 +458,7 @@ p.choose {
   font-size: 2em;
   margin-top: 0.25em;
 }
-.product-info {
+.product-title {
 display: flex;
     font-size: 16px;
     align-items: flex-start;
@@ -465,14 +467,16 @@ display: flex;
   margin-top: 18px;
 }
 
-.product-info h4 {
+span.price {
   color: var(--purple2);
+  font-size: 15px;
   
 }
 
-.product-info a {
+.product-type a {
   color: var(--white);
   font-size: 13px;
+  font-weight: 600;
 }
 
 ul.icons {
