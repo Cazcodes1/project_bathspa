@@ -35,8 +35,6 @@ if (document.readyState == "loading") {
   ready();
 }
 
-// // // Making Function
-
 function ready() {
   // Remove items from cart
   var removeCartButtons = document.getElementsByClassName("cart-remove");
