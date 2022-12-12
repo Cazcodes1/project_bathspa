@@ -254,10 +254,46 @@ strong {
   padding-bottom: 40px;
 }
 
+i.bx.bx-shopping-bag {
+  font-size: 35px;
+  color: var(--purple);
+}
+
 .shop {
   margin-top: 2rem;
 }
 /* Shop Content */
+
+/* Movie Filter */
+
+.movie-genre ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.movie-genre ul li {
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 15px 10px 50px 10px;
+  cursor: pointer;
+  color: var(--yellow);
+}
+.movie-genre ul li.active {
+  background: #fbe9ff;
+  box-shadow: 0 0 10px var(--yellow);
+
+  margin-bottom: 50px;
+  color: var(--purple);
+}
+
+.movie-genre ul li:hover {
+  letter-spacing: 2px;
+  transition: ease-in-out 0.3s;
+}
 
 section {
   display: flex;
@@ -273,6 +309,11 @@ section {
 .product-box {
   position: relative;
 }
+
+.product-box.hide {
+  display: none;
+}
+
 .product-box:hover {
   padding: 10px;
   border: 1px solid var(--text-color);
@@ -326,7 +367,7 @@ ul.icons {
   right: -100%;
   width: 360px;
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(252, 249, 251);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -431,9 +472,10 @@ button.btn-buy {
     rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
     rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
-/* not working */
-button .btn-buy:hover {
-  letter-spacing: 3px;
+
+.btn-buy:hover {
+  letter-spacing: 2px;
+  transition: ease-in-out 0.3s;
 }
 
 #close-cart {
@@ -556,5 +598,40 @@ button .btn-buy:hover {
   }
   .banner .content p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .nav {
+    padding: 15px;
+  }
+  section {
+    padding: 3rem 0 2rem;
+  }
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .shop {
+    margin-top: 2rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .nav {
+    padding: 11px;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .cart {
+    width: 320px;
+  }
+}
+@media (max-width: 360px) {
+  .shop {
+    margin-top: 1rem !important;
+  }
+  .cart {
+    width: 280px;
   }
 }
