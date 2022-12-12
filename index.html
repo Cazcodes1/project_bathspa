@@ -25,12 +25,49 @@
         <li><a href="#movies" onclick="toggleMenu();">Movies</a></li>
         <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
       </ul>
-       <ul class="social">
-        <li><a href="#like" onclick="toggleMenu();"><img src="images/heart.png" alt="heart icon" style="width: 25px" class="heart"></a></li>
-        <li><a href="#search" onclick="toggleMenu();"><img src="images/search.png" alt="search icon" style="width: 25px" class="search"></a></li>
-        <li><a href="#cart" onclick="toggleMenu();"><img src="images/cart.png" alt="cart icon" style="width: 25px" class="cart"></a></li>
-        </ul>
+         
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+         <!-- Cart Section -->
+
+         <div class="cart">
+<h2 class="cart-title">Your Cart</h2>
+
+
+
+<!-- Contents of cart -->
+
+<div class="cart-content">
+<div class="cart-box">
+  <img src="images/blank.png" alt="cart content" class="cart-img">
+  <div class="detail-box">
+    <div class="cart-product-title">Empty</div>
+    <div class="cart-price">£0</div>
+   <input type="number" value="1" class="cart-quantity">
+  </div>
+
+  <i class="bx bxs-trash-alt cart-remove"></i>
+</div>
+</div>
+  
+         <!-- Total -->
+         <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">£0</div>
+         </div>
+
+         <!-- Buy button -->
+<button type="button" class="btn-buy">Buy Now</button>
+
+
+
+         <!-- Cart close -->
+         <i class="bx bx-x" id="close-cart"></i> 
+        </div>
+      </div>
+        
+
     </header>
+    
     <section class="banner" id="banner">
       <div class="content">
         <p class="first-heading">Huge Selection</p>
@@ -51,7 +88,8 @@
         </div>
       </div>
 
-   
+   <!-- Start of About Section -->
+
       <div class="row">
         <div class="col50">
           <strong>About Us<span class="dot">.</span></strong>
@@ -71,393 +109,164 @@
         </div>
       </section>   
       
-       
+       <!-- Movie section -->
+
+<section class="shop container">
+        <h2 class="section-title" id="movies">Movies<span class="">.</span></h2>
 
 
- <!-- Movies Section -->
+<!-- Movie -->
 
- <h2 class="movies-heading" id="movies">Movies<span class="dot">.</span></h2>
- <p class="choose">See something you like? ... Free shipping within the UK!</p>
-<div class="all-movies-container">
-
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="images/cloverfield-4k-blu-ray.jpg"
-              class="movie-image"
-              alt="Cloverfield bluray"
-              height="130px"/>
-             <div class="product-info">
-            <span>THRILLER - Cert 15</span>
-            <a href="">Cloverfield - 4K Bluray</a>
-            <h4>£5.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-          </div>
+<div class="movie-genre">
+        <ul>
+          <li class="list active" data-filter="all">All</li>
+          <li class="list" data-filter="family">Family</li>
+          <li class="list" data-filter="thriller">Thriller</li>
+          <li class="list" data-filter="comedy">Comedy</li>
+          <li class="list" data-filter="horror">Horror</li>
+        </ul>
         </div>
-   
-
-         <div class="box-container">
-          <div class="box">
-            <img
-              src="images/coraline.jpeg"
-              class="movie-image"
-              alt="Coraline bluray"
-               height="130px"/>
-            
-             <div class="product-info">
-            <span>FAMILY - Cert PG</span>
-            <a href="">Coraline - 4K Bluray</a>
-            <h4>£3.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-          </div>
-        </div>
-   
-     
-        
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="images/elf-4k-blu-ray.jpeg"
-              class="movie-image"
-              alt="Elf bluray"
-               height="130px"/>
-            
-             <div class="product-info">
-            <span>FAMILY - Cert PG</span>
-            <a href="">Elf - 4K Bluray</a>
-            <h4>£3.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-          </div>
-        </div>
-   
-
-      
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="images/escape-from-alcatraz.jpeg"
-              class="movie-image"
-              alt="Alcatraz dvd"
-               height="130px"/>
-
-             <div class="product-info">
-            <span>THRILLER - Cert 15</span>
-            <a href="">Escape from Alcatraz - DVD HD</a>
-            <h4>£2.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-          </div>
-        </div>
-      
-
-       
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="images/jumanji4k-1.jpeg"
-              class="movie-image"
-              alt="Jamanji bluray"
-               height="130px"/>
-          
-             <div class="product-info">
-            <span>FAMILY - Cert 12A</span>
-            <a href="">Jumanji - 4K Bluray</a>
-            <h4>£5.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-          </div>
-        
-       
-
-
-
-      
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="images/spinning.jpg"
-              class="movie-image"
-              alt="Spinning Man bluray"
-               height="130px"/>
-          
-             <div class="product-info">
-            <span>THRILLER - Cert 15</span>
-            <a href="productDetails.html">Spinning Man - HD DVD</a>
-            <h4>£3.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div> 
-        
-         </div>
-       
-
-     
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="images/witchwoods.jpeg"
-              class="movie-image"
-              alt="Witchwoods bluray"
-               height="130px"/>
-            <div class="product-info">
-            <span>HORROR - Cert 18</span>
-            <a href="">Witchwoods - 4k Bluray</a>
-            <h4>£2.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-          </div>
-        </div>
-       
-    
-        <div class="box-container">
-          <div class="box">
-            <img
-              src="images/waynes-world.jpeg"
-              class="movie-image"
-              alt="waynes-world bluray"
-               height="130px"/>
-            
-            <div class="product-info">
-            <span>COMEDY - Cert PG</span>
-            <a href="">Wayne's World - 4K Bluray</a>
-            <h4>£4.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-          </div>
-        </div>
-
-       </div>
-         </div>
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- <h1 class="movies" id="movies">Movies<span class="dot">.</span></h1>
-    <section class="section all-products" id="products">
-      <div class="top container">
-      
-        <form>
-          <select>
-            <option value="1">Default Sorting</option>
-            <option value="2">Sort By Genre</option>
-            <option value="3">Sort By Rating</option>
-            <option value="4">Sort By Price</option>
-            </select>
-          <span><i class="bx bx-chevron-down"></i></span>
-        </form>
-      </div>
-
-      <div class="product-center container fade">
-        <div class="product-item">
-          <div class="overlay">
-            <a href="productDetails.html" class="product-thumb">
-              <img src="./images/spinning.jpg" style="width: 400px" alt="spinning man dvd" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>THRILLER - </span>
-            <a href="productDetails.html">Spinning Man - HD DVD</a>
-            <h4>£3.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./images/jumanji4k-1.jpeg" style="width: 400px" alt="Jumanji 4K BR" />
-            </a>
-           
-          </div>
-          <div class="product-info">
-            <span>FAMILY - </span>
-            <a href="">Jumanji - 4K Bluray</a>
-            <h4>£5.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./images/cloverfield-4k-blu-ray.jpg" style="width: 400px" alt="Colverfield Bluray 4K" />
-            </a>
-           </div>
-          <div class="product-info">
-            <span>THRILLER - </span>
-            <a href="">Cloverfield - 4K Bluray</a>
-            <h4>£5.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./images/waynes-world.jpeg" style="width: 400px" alt="Wayne's world bluray 4K" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>COMEDY - </span>
-            <a href="">Wayne's World - 4K Bluray</a>
-            <h4>£4.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./images/elf-4k-blu-ray.jpeg" style="width: 400px" alt="Elf bluray 4K" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>FAMILY - </span>
-            <a href="">Elf - 4K Bluray</a>
-            <h4>£3.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./images/coraline.jpeg" style="width: 400px" alt="Coraline bluray 4K" />
-            </a>
-          </div>
-         
-        </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="images/escape-from-alcatraz.jpeg" style="width: 400px" alt="Alcatraz DVD" />
-            </a>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box" data-item="thriller">
+                <img src="images/cloverfield-4k-blu-ray.jpg" alt="Cloverfiled blueray" class="product-img">
+                  <h2 class="product-title">THRILLER - Cert 15</h2>
+            <h2 class="product-type">Cloverfield - 4K Bluray</h2>
+            <span class="price">£5.00</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-          <div class="product-info">
-            <span>Thriller - </span>
-            <a href="">Escape from Alcatraz - DVD HD</a>
-            <h4>£2.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
+            <!-- Box 2 -->
+            <div class="product-box" data-item="family">
+                <img src="images/coraline.jpeg" alt="Coraline bluray" class="product-img">
+                 <h2 class="product-title">FAMILY - Cert PG</h2>
+            <h2 class="product-type">Coraline - 4K Bluray</h2>
+            <span class="price">£3.00</span>
+                  <i class="bx  bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box" data-item="family">
+                <img src="images/elf-4k-blu-ray.jpeg" alt="Elf bluray" class="product-img">
+               <h2 class="product-title">FAMILY - Cert PG</h2>
+            <h2 class="product-type">Elf - 4K Bluray</h2>
+            <span class="price">£3.00</span>
+                  <i class="bx  bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box" data-item="thriller">
+                <img src="images/escape-from-alcatraz.jpeg" alt="Alcatraz bluray" class="product-img">
+                 <h2 class="product-title">THRILLER - Cert 15</h2>
+            <h2 class="product-type">Escape from Alcatraz - 4K Bluray</h2>
+            <span class="price">£2.00</span>
+                  <i class="bx  bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box" data-item="family">
+               <img src="images/jumanji4k-1.jpeg" alt="Jumanji bluray" class="product-img">
+                <h2 class="product-title">FAMILY - Cert 12A</h2>
+            <h2 class="product-type">Jumanji - 4K Bluray</h2>
+            <span class="price">£3.00</span>
+                  <i class="bx  bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box" data-item="thriller">
+                <img src="images/spinning.jpg" alt="Spinning Man DVD" class="product-img">
+                <h2 class="product-title">THRILLER - Cert 15</h2>
+                  <h2 class="product-type">Spinning Man - HD DVD</h2>
+                <span class="price">£2.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box" data-item="comedy">
+                <img src="images/waynes-world.jpeg" alt="Waynes world bluray" class="product-img">
+                <h2 class="product-title">COMEDY - Cert PG</h2>
+                 <h2 class="product-type">Wayne's World - 4K Bluray</h2>
+                <span class="price">£3.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box" data-item="horror">
+                <img src="images/witchwoods.jpeg" alt="Witchwoods blueray" class="product-img">
+                <h2 class="product-title">HORROR - Cert 18</h2>
+                 <h2 class="product-type">Witchwoods - 4K Bluray</h2>
+
+                <span class="price">£2.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- Box 9 -->
+            <div class="product-box" data-item="family">
+                <img src="images/terra-nova.jpg" alt="terra-nova dvd" class="product-img">
+                <h2 class="product-title">FAMILY - Cert PG</h2>
+                 <h2 class="product-type">Terra Nova - DVD Box-set</h2>
+
+                <span class="price">£3.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+               <!-- Box 10 -->
+            <div class="product-box" data-item="thriller">
+                <img src="images/doublejeopardy.jpeg" alt="double jeopardy dvd" class="product-img">
+                <h2 class="product-title">THRILLER - Cert 15</h2>
+                 <h2 class="product-type">Double Jeopardy - DVD</h2>
+
+                <span class="price">£2.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 11 -->
+              <div class="product-box" data-item="horror">
+                <img src="images/thething.jpeg" alt="the thing blueray" class="product-img">
+                <h2 class="product-title">HORROR - Cert 18</h2>
+                 <h2 class="product-type">The Thing - 4K Bluray</h2>
+
+                <span class="price">£3.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- Box 12 -->
+              <div class="product-box" data-item="horror">
+                <img src="images/scarejulie.jpeg" alt="Lets Scare Julie blueray" class="product-img">
+                <h2 class="product-title">HORROR - Cert 18</h2>
+                 <h2 class="product-type">Let's Scare Julie - 4K Bluray</h2>
+
+                <span class="price">£1.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+              <!-- Box 13 -->
+              <div class="product-box" data-item="horror">
+                <img src="images/antebellum.jpeg" alt="Antebellum dvd" class="product-img">
+                <h2 class="product-title">HORROR - Cert 18</h2>
+                 <h2 class="product-type">Antebellum - HD DVD</h2>
+
+                <span class="price">£2.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 14 -->
+              <div class="product-box" data-item="comedy">
+                <img src="images/guesthouse.jpeg" alt="Guesthouse bluray" class="product-img">
+                <h2 class="product-title">COMEDY - Cert 18</h2>
+                 <h2 class="product-type">Guest House - Bluray</h2>
+
+                <span class="price">£2.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- Box 15 -->
+              <div class="product-box" data-item="comedy">
+                <img src="images/wongfoo.jpeg" alt="Wong Foo bluray" class="product-img">
+                <h2 class="product-title">COMEDY - Cert 15</h2>
+                 <h2 class="product-type">To Wong Foo, Thanks for Everything - Bluray</h2>
+
+                <span class="price">£1.50</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+             <!-- Box 16 -->
+              <div class="product-box" data-item="comedy">
+                <img src="images/realgenius.jpeg" alt="Real genius dvd" class="product-img">
+                <h2 class="product-title">Comedy - Cert PG</h2>
+                 <h2 class="product-type">Real Genius - 4K Bluray</h2>
+
+                <span class="price">£2.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
         </div>
-        <div class="product-item">
-          <div class="overlay">
-            <a href="" class="product-thumb">
-              <img src="./images/witchwoods.jpeg" style="width: 400px" alt="Witchwoods DVD" />
-            </a>
-          </div>
-          <div class="product-info">
-            <span>HORROR - </span>
-            <a href="">Witchwoods - 4k Bluray</a>
-            <h4>£2.00</h4>
-          </div>
-          <ul class="icons">
-            <li><i class="bx bx-heart"></i></li>
-            <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart"></i></li>
-          </ul>
-        </div>
-      </div>
-<div style="text-align:center">
-  <span class="dots" onclick="currentSlide(1)"></span>
-  <span class="dots" onclick="currentSlide(2)"></span>
-  <span class="dots" onclick="currentSlide(3)"></span>
-    <span class="dots" onclick="currentSlide(4)"></span>
-      <span class="dots" onclick="currentSlide(5)"></span>
-        <span class="dots" onclick="currentSlide(6)"></span>
-          <span class="dots" onclick="currentSlide(7)"></span>
-            <span class="dots" onclick="currentSlide(8)"></span>
-</div> 
-
- <!-- Back and forward buttons -->
-  <!-- <a class="left" onclick="plusSlides(1)">Swipe for more <img src="images/leftarrow.png" alt="left arrow element"  style="width: 90px"class="left" ></a>
-  <a class="right" onclick="plusSlides(1)"> <img src="images/rightarrow.png" alt="right arrow element" style="width: 90px"class="right">Swipe for more</a>
-</div>
-<br>  --> 
-
-
-
+    </section>
 
   </body>
 </html>
