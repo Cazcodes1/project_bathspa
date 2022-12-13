@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/21b3efafb0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
      <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <script src="script.js" defer></script>
-    <title>Direct Films</title>
+    <title>Direct Films - DVDs and Blurays</title>
   </head>
   <body>
     <!-- This is the header section -->
@@ -27,6 +28,7 @@
       </ul>
          
         <i class="bx bx-shopping-bag" id="cart-icon"></i>
+
          <!-- Cart Section -->
 
          <div class="cart">
@@ -38,7 +40,7 @@
 
 <div class="cart-content">
 <div class="cart-box">
-  <img src="images/blank.png" alt="cart content" class="cart-img">
+  <img src="images/emptydvd.png" alt="cart content" class="cart-img">
   <div class="detail-box">
     <div class="cart-product-title">Empty</div>
     <div class="cart-price">£0</div>
@@ -64,9 +66,9 @@
          <i class="bx bx-x" id="close-cart"></i> 
         </div>
       </div>
-        
+      </header>
 
-    </header>
+      <!-- Banner Section -->
     
     <section class="banner" id="banner">
       <div class="content">
@@ -87,6 +89,34 @@
           </div>
         </div>
       </div>
+
+<!-- Pop up login -->
+
+<div class="centre">
+
+<div class="container-login">
+  <div class="login-text">Login Form</div>
+  <form action="#">
+<div class="field">
+<span></span>
+<input type="text" placeholder="Email">
+</div>
+<div class="field">
+<span></span>
+<input type="password" placeholder="Password">
+</div>
+<div class="field">
+
+<input type="submit" value="LOGIN">
+</div>
+
+
+
+  </form>
+
+
+</div>
+
 
    <!-- Start of About Section -->
 
@@ -126,6 +156,7 @@
           <li class="list" data-filter="horror">Horror</li>
         </ul>
         </div>
+
         <!-- Content -->
         <div class="shop-content">
             <!-- Box 1 -->
@@ -268,5 +299,62 @@
         </div>
     </section>
 
+<!-- This is the contact section -->
+
+<section class="contact" id="contact">
+
+  <div class="contact-form">
+    <h2 class="contact">Contact Us.</h2>
+      <p class="contact">Got a question? Get in touch</p>
+      <form action="">
+        <input type="" placeholder="Your Name" required>
+        <input type="email" name="email" id="" placeholder="Your e-mail" required>
+        <input type="" placeholder="Subject ..." required>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message ..." required></textarea>
+        <input type="submit" name="" value="submit" class="btn">
+
+      </form>
+  </div>
+
+  <div class="contact-img"><img src="images/popcornbox.png" alt="" class="src" width="550px"></div>
+</section>
+
+
+<!-- Start of footer section -->
+
+<footer class="footer" id="footer">
+<div class="container-footer">
+  <div class="row" id="row">
+    <div class="footer-col">
+      <h4 class="footer">Get help</h4>
+      <ul class="footer">
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Order Status</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <ul class="footer">
+        <li class="social-icons"><a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+        <li class="social-icons"><a href="https://en-gb.facebook.com/" target="blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+        <li class="social-icons"><a href="https://twitter.com/" target="blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+        </ul>
+    </div><div class="footer-col">
+      <h4>Our Location</h4>
+      <ul class="footer">
+      <p  class="location">Direct Films<br/>
+      Arrow Park<br/>
+    Scotsland<br/>
+  S55 000</p>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</footer>
   </body>
 </html>
