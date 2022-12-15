@@ -12,10 +12,11 @@ function toggleMenu() {
   navigation.classList.toggle("active");
 }
 
-function totalPay() {
-  let total = document.querySelector(".total-price").value;
-  let pay = total;
-  document.querySelector("total-pay").innerText = `£${pay}`;
-}
+// Not working
 
-console.log(totalPay);
+// function totalPay() {
+//   let totalStoragePrice = localStorage.setItem("totalPrice", total);
+//   document.querySelector("total-price")[0].innerHtml = localStorage.getItem(
+//     "£" + totalStoragePrice
+//   );
+// }

@@ -134,16 +134,11 @@ function updateTotal() {
     let price = parseFloat(priceElement.innerText.replace("£", ""));
     let quantity = quantityElement.value;
     total = total + price * quantity;
+    // let totalStoragePrice = localStorage.setItem("totalPrice", total);
   }
-  // If price Contain some pence Value
+
   total = total.toFixed(2);
-
   document.getElementsByClassName("total-price")[0].innerText = "£" + total;
-}
-
-function totalPay() {
-  let total = document.getElementById("total-price").value;
-  document.querySelector("total-pay").innerHTML = `£${total}`;
 }
 
 // Filterable Movies
