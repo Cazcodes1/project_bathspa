@@ -141,6 +141,11 @@ function updateTotal() {
   document.getElementsByClassName("total-price")[0].innerText = "£" + total;
 }
 
+function totalPay() {
+  let total = document.getElementById("total-price").value;
+  document.querySelector("total-pay").innerHTML = `£${total}`;
+}
+
 // Filterable Movies
 
 let list = document.querySelectorAll(".list");

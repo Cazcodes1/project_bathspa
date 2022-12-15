@@ -76,28 +76,21 @@ header .navigation li a {
   font-weight: 300;
 }
 
-header .social {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-left: 500px;
-  color: var(--yellow);
-  font-size: 23px;
-}
-
-header .navigation li a:hover {
+button.navigation {
+  font-weight: 500;
+  border: none;
   color: var(--purple);
+  background: var(--yellow);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
-
-header.sticky .navigation li a {
-  color: var(--white);
-}
-header.sticky .navigation li a:hover {
-  color: var(--purple2);
-}
-
-span.headline {
-  color: var(--purple3);
+button.navigation:hover {
+  letter-spacing: 2px;
 }
 
 section {
