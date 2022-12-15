@@ -786,13 +786,11 @@ p.location {
 
 /* Start of Media Queries */
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 480px) {
   header.sticky {
     display: none;
   }
-  body {
-    width: 100%;
-  }
+
   header {
     /* align-items: center; */
     flex-direction: row;
