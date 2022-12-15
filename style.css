@@ -163,7 +163,7 @@ section {
   font-size: 50px;
   display: flex;
   padding-left: 500px;
-  position: relative;
+
   color: var(--yellow);
 }
 
@@ -527,12 +527,12 @@ ul.icons {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 650px;
+  width: 360px;
   min-height: 100vh;
   padding: 10px;
-  background-color: rgba(253, 240, 248, 0.953);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: rgb(252, 249, 251);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: 0.3s;
   z-index: 999999;
 }
@@ -551,10 +551,10 @@ ul.icons {
 
 .cart-box {
   display: grid;
-  grid-template-columns: 33% 49% 12%;
-  align-content: center;
-  justify-content: center;
-  margin-top: -1rem;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .cart-img {
@@ -572,8 +572,6 @@ i.bx.bx-shopping-bag.add-cart {
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
-  justify-items: end;
-  align-content: center;
 }
 
 .cart-product-title {
@@ -585,13 +583,22 @@ i.bx.bx-shopping-bag.add-cart {
   font-weight: 500;
 }
 
+/* .cart-quantity {
+  border: 1px solid var(--purple);
+  /* outline-color: #550040; */
+/* width: 2.4rem;
+  text-align: center;
+  font-size: 1.5rem; */
+/* } */
+
+/* Cart quantity to show arrows.  CSS styling can't be applied as a class. */
+
 input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
 }
 
 .cart-remove {
-  font-size: 25px;
-  padding-right: 20px;
+  font-size: 24px;
   color: var(--black);
   cursor: pointer;
 }
@@ -640,44 +647,6 @@ button.btn-buy {
   font-size: 2rem;
   color: var(--black);
   cursor: pointer;
-}
-
-/* Payment Section */
-
-div.container-pay {
-  display: grid;
-  justify-items: center;
-}
-
-.owner {
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-}
-
-.input-field input {
-  width: 200px;
-  border: none;
-  border: 0.5px solid rgba(128, 128, 128, 0.597);
-  border-radius: 5px;
-  padding: 10px;
-  background: rgb(255, 245, 246);
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-h2.pay {
-  font-size: 18px;
-  color: #550040;
-}
-h3.owner {
-  font-size: 14px;
-  font-weight: 300;
-  color: #64004b;
-}
-
-option {
-  height: 15px;
 }
 
 /* Start of Contact Section */
