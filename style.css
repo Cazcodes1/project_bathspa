@@ -847,12 +847,12 @@ p.location {
     flex-direction: row;
   }
   .banner .content p.first-heading {
-    font-size: 13px;
+    font-size: 20px;
   }
   .banner .content h2 {
-    font-size: 15px;
+    font-size: 25px;
   }
   .banner .content p {
-    font-size: 13px;
+    font-size: 20px;
   }
 }
