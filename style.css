@@ -786,7 +786,10 @@ p.location {
 
 /* Start of Media Queries */
 
-@media (max-width: 991px) {
+@media (max-width: 480px) {
+  header.sticky {
+    display: none;
+  }
   body {
     width: 100%;
   }
@@ -803,6 +806,9 @@ p.location {
   .cart {
     width: 80%;
     min-height: 100%;
+  }
+  #cart.icon {
+    padding-left: 0;
   }
   .cart-box {
     display: grid;
