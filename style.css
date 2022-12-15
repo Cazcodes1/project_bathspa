@@ -848,6 +848,7 @@ p.location {
   }
   .banner .content p.first-heading {
     font-size: 20px;
+    margin-top: -70px;
   }
   .banner .content h2 {
     font-size: 25px;
