@@ -135,8 +135,8 @@ function updateTotal() {
     let quantity = quantityElement.value;
     total = total + price * quantity;
   }
-  // If price Contain some Cents Value
-  total = Math.round(total * 100) / 100;
+  // If price Contain some pence Value
+  total = total.toFixed(2);
 
   document.getElementsByClassName("total-price")[0].innerText = "£" + total;
 }
