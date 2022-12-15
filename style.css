@@ -223,19 +223,6 @@ section {
   margin: -20px 10px 10px 160px;
 }
 
-/* display: none; */
-/* position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 99999;
-  padding: 60px 32px;
-  background: #cca0a9;
-  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
-  width: 30%;
-  border-radius: 10px; */
-
 .login-text {
   color: var(--background);
   font-size: 33px;
@@ -858,5 +845,14 @@ p.location {
     background-repeat: no-repeat;
     padding-top: 250px;
     flex-direction: row;
+  }
+  .banner .content p.first-heading {
+    font-size: 13px;
+  }
+  .banner .content h2 {
+    font-size: 15px;
+  }
+  .banner .content p {
+    font-size: 13px;
   }
 }
