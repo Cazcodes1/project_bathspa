@@ -21,3 +21,9 @@ function totalPay() {
 }
 
 totalPay()
+
+let button = document.querySelector(".payment");
+
+function thanksOrder () {
+  button.onclick = alert ("Thank you!  Your order has been placed! The Direct Films Team");
+}
