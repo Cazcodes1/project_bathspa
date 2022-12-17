@@ -556,6 +556,17 @@ i.bx.bx-shopping-bag.add-cart {
   color: var(--yellow);
   font-size: 24px;
 }
+
+i.bx.bx-shopping-bag.add-cart:hover{
+  color:var(--white);
+  font-size: 28px;
+ 
+}
+
+
+
+
+
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
