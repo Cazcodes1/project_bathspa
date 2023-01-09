@@ -557,15 +557,10 @@ i.bx.bx-shopping-bag.add-cart {
   font-size: 24px;
 }
 
-i.bx.bx-shopping-bag.add-cart:hover{
-  color:var(--white);
+i.bx.bx-shopping-bag.add-cart:hover {
+  color: var(--white);
   font-size: 28px;
- 
 }
-
-
-
-
 
 .detail-box {
   display: grid;
@@ -798,14 +793,15 @@ p.location {
 
 /* Start of Media Queries */
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   header.sticky {
     display: none;
+    max-width: 100%;
   }
 
   header {
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-content: space-between;
   }
   .logo {
     margin-bottom: -150px;
@@ -816,13 +812,27 @@ p.location {
     min-height: 100%;
   }
   #cart-icon {
+    margin-top: 30px;
     padding-left: 0;
     font-size: 30px;
   }
-
+  header .navigation {
+    margin-top: 135px;
+    flex-direction: column;
+  }
   header .navigation li {
-    font-size: 12px;
-    padding: 6px;
+    font-size: 14px;
+    padding: 7px 35px 5px;
+  }
+  .row .col50 {
+    max-width: 95%;
+  }
+  element.style {
+    width: 400px;
+  }
+  img.shop {
+    margin-right: 0px;
+    margin-bottom: -70px;
   }
   .cart-box {
     display: grid;
@@ -889,12 +899,150 @@ p.location {
     margin: -20px;
   }
   section.about {
-    font-size: 12px;
-    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
-    padding: 21px 49px 10px 22px;
+    flex-direction: column-reverse;
   }
   img.shop {
     width: 200px;
+  }
+  .contact {
+    display: block;
+  }
+  .footer-col {
+    width: 46%;
+    padding: 0px 80px;
+  }
+}
+
+@media (min-width: 961px) {
+}
+
+@media only screen and (max-width: 480px) {
+  header.sticky {
+    display: none;
+    max-width: 100%;
+  }
+
+  header {
+    align-content: space-between;
+  }
+  .logo {
+    margin-bottom: -150px;
+  }
+
+  .cart {
+    width: 80%;
+    min-height: 100%;
+  }
+  #cart-icon {
+    margin-top: 30px;
+    padding-left: 0;
+    font-size: 30px;
+  }
+  header .navigation {
+    margin-top: 135px;
+    flex-direction: column;
+  }
+  header .navigation li {
+    font-size: 14px;
+    padding: 7px 35px 5px;
+  }
+  .row .col50 {
+    max-width: 95%;
+  }
+  element.style {
+    width: 400px;
+  }
+  img.shop {
+    margin-right: 0px;
+    margin-bottom: -70px;
+  }
+  .cart-box {
+    display: grid;
+    grid-template-columns: 28% 16% 12% 0%;
+    align-items: center;
+  }
+
+  .cart-title {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .total {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--purple);
+    flex-wrap: wrap;
+  }
+  .button.btn-buy {
+    display: block;
+  }
+  #close-cart {
+    display: contents;
+    position: absolute;
+    top: 1rem;
+    font-size: 4rem;
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    background: url(images/girlmovie.png);
+    mix-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    flex-direction: row;
+  }
+  .banner .content p.first-heading {
+    font-size: 15px;
+    margin-top: -94px;
+  }
+  .banner .content h2 {
+    font-size: 22px;
+  }
+  .banner .content p {
+    font-size: 15px;
+  }
+
+  .container-login {
+    width: 80%;
+    padding: 60px 30px;
+    left: 45%;
+  }
+  .close-btn {
+    margin: -20px 8px 10px 120px;
+  }
+  #show {
+    margin: -20px;
+  }
+  section.about {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  img.shop {
+    width: 200px;
+  }
+  .contact {
+    display: block;
+  }
+  .footer-col {
+    width: 46%;
+    padding: 0px 80px;
   }
 }
