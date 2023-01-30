@@ -793,7 +793,7 @@ p.location {
 
 /* Start of Media Queries */
 
-@media (max-width: 641px) {
+@media (min-width: 480px) and (max-width: 728px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   header.sticky {
     display: none;
@@ -922,7 +922,7 @@ p.location {
 @media (min-width: 961px) {
 }
 
-@media only screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   header.sticky {
     display: none;
     max-width: 100%;
