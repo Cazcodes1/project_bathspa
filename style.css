@@ -791,258 +791,150 @@ p.location {
   line-height: 25px;
 }
 
-/* Start of Media Queries */
-
-@media (min-width: 480px) and (max-width: 728px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  header.sticky {
-    display: none;
-    max-width: 100%;
-  }
-
-  header {
-    align-content: space-between;
-  }
-  .logo {
-    margin-bottom: -150px;
-  }
-
-  .cart {
-    width: 80%;
-    min-height: 100%;
-  }
-  #cart-icon {
-    margin-top: 30px;
-    padding-left: 0;
-    font-size: 30px;
-  }
-  header .navigation {
-    margin-top: 135px;
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center;
+    align-content: stretch;
     flex-direction: column;
-  }
-  header .navigation li {
-    font-size: 14px;
-    padding: 7px 35px 5px;
-  }
-  .row .col50 {
-    max-width: 95%;
-  }
-  element.style {
-    width: 400px;
-  }
-  img.shop {
-    margin-right: 0px;
-    margin-bottom: -70px;
-  }
-  .cart-box {
-    display: grid;
-    grid-template-columns: 28% 16% 12% 0%;
-    align-items: center;
-  }
-
-  .cart-title {
-    text-align: left;
-    margin-left: 10px;
-  }
-  .total {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--purple);
+    align-items: flex-start;
     flex-wrap: wrap;
-  }
-  .button.btn-buy {
-    display: block;
-  }
-  #close-cart {
-    display: contents;
-    position: absolute;
-    top: 1rem;
-    font-size: 4rem;
-  }
-  .banner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    background: url(images/girlmovie.png);
-    mix-blend-mode: screen;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 250px;
-    flex-direction: row;
-  }
-  .banner .content p.first-heading {
-    font-size: 15px;
-    margin-top: -94px;
-  }
-  .banner .content h2 {
-    font-size: 22px;
-  }
-  .banner .content p {
-    font-size: 15px;
-  }
-
-  .container-login {
-    width: 80%;
-    padding: 60px 30px;
-    left: 45%;
-  }
-  .close-btn {
-    margin: -20px 8px 10px 120px;
-  }
-  #show {
-    margin: -20px;
-  }
-  section.about {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-  }
-  img.shop {
-    width: 200px;
-  }
-  .contact {
-    display: block;
-  }
-  .footer-col {
-    width: 46%;
-    padding: 0px 80px;
+    margin-top: 32px;
   }
 }
 
-@media (min-width: 961px) {
-}
-
-@media (max-width: 480px) and (orientation: portrait) {
-  header.sticky {
-    display: none;
-    max-width: 100%;
-  }
-
-  header {
-    align-content: space-between;
-  }
-  .logo {
-    margin-bottom: -150px;
-  }
-
-  .cart {
-    width: 80%;
-    min-height: 100%;
-  }
-  #cart-icon {
-    margin-top: 30px;
-    padding-left: 0;
-    font-size: 30px;
-  }
-  header .navigation {
-    margin-top: 135px;
+@media (max-width: 992px) {
+  .row {
     flex-direction: column;
   }
-  header .navigation li {
-    font-size: 14px;
-    padding: 7px 35px 5px;
+  #row {
+    margin-top: -71px;
+    flex-direction: column;
   }
-  .row .col50 {
-    max-width: 95%;
-  }
-  element.style {
-    width: 400px;
-  }
-  img.shop {
-    margin-right: 0px;
-    margin-bottom: -70px;
-  }
-  .cart-box {
-    display: grid;
-    grid-template-columns: 28% 16% 12% 0%;
-    align-items: center;
-  }
-
-  .cart-title {
-    text-align: left;
-    margin-left: 10px;
-  }
-  .total {
+  .row-intro {
+    padding: 0;
+    width: 107%;
     display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--purple);
-    flex-wrap: wrap;
-  }
-  .button.btn-buy {
-    display: block;
-  }
-  #close-cart {
-    display: contents;
-    position: absolute;
-    top: 1rem;
-    font-size: 4rem;
-  }
-  .banner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    background: url(images/girlmovie.png);
-    mix-blend-mode: screen;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 250px;
-    flex-direction: row;
-  }
-  .banner .content p.first-heading {
-    font-size: 15px;
-    margin-top: -94px;
-  }
-  .banner .content h2 {
-    font-size: 22px;
-  }
-  .banner .content p {
-    font-size: 15px;
-  }
-
-  .container-login {
-    width: 80%;
-    padding: 60px 30px;
-    left: 45%;
-  }
-  .close-btn {
-    margin: -20px 8px 10px 120px;
-  }
-  #show {
-    margin: -20px;
-  }
-  section.about {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
     flex-direction: column-reverse;
   }
-  img.shop {
-    width: 200px;
+  p {
+    font-size: 16px;
+    margin-top: 0;
+    text-align: justify;
+    margin: 28px 26px;
   }
-  .contact {
-    display: block;
+  .logo {
+    display: none;
   }
-  .footer-col {
-    width: 46%;
-    padding: 0px 80px;
+  a.top-page {
+    font-size: 24px !important;
+  }
+  .headings {
+    font-size: 23px;
+    margin-top: 0;
+  }
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+  .mt-5 {
+    margin-top: -1rem !important;
+  }
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+  .p-5 {
+    padding: 17px !important;
+    margin-top: 30px;
+    margin-bottom: 39px;
+    margin-left: -8px;
+  }
+  h3 {
+    font-size: 25px;
+    margin-right: -13px;
+    margin-bottom: 0px;
+  }
+  .name {
+    text-align: right;
+  }
+  .hello {
+    margin-right: 14px;
+    margin-top: 34px;
+    margin-bottom: 9px;
+  }
+
+  .nav-link {
+    font-size: 19px;
+    margin-left: -26px;
+    margin-top: -34px;
+    margin-bottom: -28px;
+    padding: 59px;
+    line-height: 15px;
+  }
+
+  .img-fluid {
+    max-inline-size: 113%;
+    margin-left: -21px;
+  }
+  #tropical-weather {
+    margin-top: -14px;
+  }
+  .how-to-contact {
+    font-size: 37px !important;
+  }
+  .contact-information {
+    background: #e9ecef30;
+  }
+
+  .social {
+    font-size: 42px;
+    padding: 10px;
+  }
+  a.icon {
+    font-size: 36px;
+  }
+  .thanks {
+    letter-spacing: 2px;
+    line-height: 35px;
+    padding: 11px;
+  }
+  p.thanks {
+    font-size: 18px;
+  }
+  .linktree {
+    font-size: large;
+    color: var(---primary-font-color);
+    padding: 7px;
+    line-height: 25px;
+  }
+  .link-linktree {
+    font-family: var(---alternative-font-family);
+  }
+  .para-me {
+    font-family: var(---alternative-font-family);
+    margin-top: 7px;
+  }
+  #caroline {
+    margin: 32px 0px 0px 12px;
+    box-shadow: var(---box-shadow-links);
+    max-width: 80%;
+  }
+  div.main {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -11px;
+  }
+  div.container-fluid {
+    padding: 0px;
+  }
+  div.certificates {
+    display: flex;
+    box-shadow: var(---box-shadow-links);
+    background-color: #0000000a;
+    justify-content: center;
+    padding: 65px;
+  }
+  .achievements {
+    font-size: 15px;
   }
 }
