@@ -922,7 +922,7 @@ p.location {
 @media (min-width: 961px) {
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
   header.sticky {
     display: none;
     max-width: 100%;
