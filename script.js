@@ -1,9 +1,12 @@
 // Nav Section
 
 window.addEventListener("scroll", function () {
+  if (window.matchMedia("(max-width: 767px)").matches) {
+       return false;
+     } else {
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
-});
+};
 
 function toggleMenu() {
   let menuToggle = document.querySelector(".menuToggle");
