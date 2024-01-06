@@ -137,7 +137,7 @@ function updateTotal() {
     let price = parseFloat(priceElement.innerText.replace("£", ""));
     let quantity = quantityElement.value;
     total = total + price * quantity;
-    let totalStoragePrice = localStorage.setItem("totalPrice", total);
+    // let totalStoragePrice = localStorage.setItem("totalPrice", total);
   }
 
   total = total.toFixed(2);

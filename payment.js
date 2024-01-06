@@ -12,18 +12,11 @@ function toggleMenu() {
   navigation.classList.toggle("active");
 }
 
+// Not working
 
-
-function totalPay() {
-  document.querySelector(".total-pay").innerText = "£" + JSON.parse(window.localStorage.getItem("totalPrice")).toFixed(2);
-    
-
-}
-
-totalPay()
-
-let button = document.querySelector(".payment");
-
-function thanksOrder () {
-  button.onclick = alert ("Thank you!  Your order has been placed! The Direct Films Team");
-}
+// function totalPay() {
+//   let totalStoragePrice = localStorage.setItem("totalPrice", total);
+//   document.querySelector("total-price")[0].innerHtml = localStorage.getItem(
+//     "£" + totalStoragePrice
+//   );
+// }

@@ -556,12 +556,15 @@ i.bx.bx-shopping-bag.add-cart {
   color: var(--yellow);
   font-size: 24px;
 }
+<<<<<<< HEAD
 
 i.bx.bx-shopping-bag.add-cart:hover {
   color: var(--white);
   font-size: 28px;
 }
 
+=======
+>>>>>>> parent of f93ca7d (Merge branch 'main' of https://github.com/Cazcodes1/project_bathspa)
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
