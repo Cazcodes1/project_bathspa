@@ -558,13 +558,21 @@ i.bx.bx-shopping-bag.add-cart {
 }
 <<<<<<< HEAD
 
-i.bx.bx-shopping-bag.add-cart:hover {
-  color: var(--white);
+i.bx.bx-shopping-bag.add-cart:hover{
+  color:var(--white);
   font-size: 28px;
+ 
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f93ca7d (Merge branch 'main' of https://github.com/Cazcodes1/project_bathspa)
+=======
+
+
+
+
+>>>>>>> f0017e83e3f1ada1ce998838e9573e18d97f1502
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
@@ -746,7 +754,6 @@ ul.footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .footer-col {
