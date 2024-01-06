@@ -30,4 +30,7 @@ function totalPay() {
 }
 
 totalPay()
+<<<<<<< HEAD
+>>>>>>> parent of 4d59109 (updated payment with alert msg)
+=======
 >>>>>>> parent of 4d59109 (updated payment with alert msg)
